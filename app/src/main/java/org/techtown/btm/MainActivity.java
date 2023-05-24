@@ -40,11 +40,48 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_home);
 
         // 개발자 정보 버튼 클릭 시 액티비티 전환
-        Button developer_info_btn = findViewById(R.id.btn1);
-        developer_info_btn.setOnClickListener(new View.OnClickListener() {
+        Button btn1 = findViewById(R.id.btn1);
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Home_gwanganri.class);
+                Intent intent = new Intent(MainActivity.this, Home_Gwanganri.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn2 = findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Home_Haeundae.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn3 = findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Home_Ilgwag.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn4 = findViewById(R.id.btn4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Home_Songjeong.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button btn5 = findViewById(R.id.btn5);
+       btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Home_Dadaepo.class);
                 startActivity(intent);
             }
         });

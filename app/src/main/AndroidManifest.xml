@@ -22,7 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home_gwanganri"/>
+        <activity android:name=".Home_Gwanganri"/>
+        <activity android:name=".Home_Haeundae"/>
+        <activity android:name=".Home_Ilgwag"/>
+        <activity android:name=".Home_Songjeong"/>
+        <activity android:name=".Home_Dadaepo"/>
+
     </application>
 
 </manifest>
